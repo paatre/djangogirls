@@ -62,9 +62,12 @@ h4 {
   color: #000000;
 }
 
-.post > .date,
-.post > .actions {
+.post > aside {
   float: right;
+}
+
+.post > aside > a {
+  margin-left: 16px;
 }
 
 .btn-secondary,
