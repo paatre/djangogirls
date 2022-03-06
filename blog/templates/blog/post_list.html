@@ -3,9 +3,11 @@
 {% block content %}
     {% for post in posts %}
         <article class="post">
-            <time class="date">
-                {{ post.published_date }}
-            </time>
+            <aside class="published-date-container">
+              <time class="date">
+                  {{ post.published_date }}
+              </time>
+            </aside>
             <h2>
               <a href="{% url 'post_detail' pk=post.pk %}">
                 {{ post.title }}
